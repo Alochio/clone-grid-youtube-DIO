@@ -117,14 +117,13 @@ aside .button-sidebar:hover{
 }
 
 main {
-    
     background-color: #dbdbdb4d;
     grid-area: main;
-    display: inline-flex;
-}
-.container-grid {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10px;
+}
+.container-grid {
     min-width: 240px;
     max-height: 200px;
     margin-top: 30px;
@@ -132,8 +131,12 @@ main {
     margin-bottom: 30px;
 }
 
+.container-grid:hover{
+    cursor: pointer;
+}
+
 .video-1, .video-2, .video-3, .video-4, .video-5, .video-6 {
-    flex: 1 0 20%; /* Ajuste este valor conforme necessário */
+    flex: 1 0 20%;
     margin: 5px;
 }
 
