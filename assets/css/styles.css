@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    height: 600px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+
+    grid-template-areas:
+        "header header header header header header header header header header"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"
+        "sidebar sidebar main main main main main main main main"; 
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    height: 56px;
+    background-color: #ffffff;
+    display: flex;
+    padding: 0 24px 0 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .icons {
+    width: 24px;
+    height: 24px;
+}
+
+header .container-esquerda {
+    display: flex;
+    gap: 24px;
+}
+
+header .container-esquerda #logo-youtube {
+    width: 90px;
+    height: 20px;
+}
+
+header .container-central {
+    width: 400px;
+    height: 40px;
+}
+
+header .container-central #text-search {
+    width: calc(100% - 57px);
+    height: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #CCCCCC;
+    border-radius: 20px 0 0 20px;
+    padding-left: 15px;
+}
+
+header .container-central #button-search {
+    width: 57px;
+    height: 40px;
+    background-color: #F8F8F8;
+    position: absolute;
+    border: none;
+    box-sizing: border-box;
+    border: 1px solid #CCCCCC;
+    border-radius: 0px 20px 20px 0px;
+}
+
+header .container-direita {
+    display: flex;
+    gap: 24px;
+}
+
+header .container-direita #button-avatar{
+    border-radius: 50%;
+}
+
+header .container-direita img:hover,
+.container-esquerda img:hover,
+.container-central img:hover {
+    cursor: pointer;
+}
+
+aside {
+    grid-area: sidebar;
+    padding-top: 30px;
+}
+
+aside img{
+    padding-right: 10px;
+}
+
+aside .button-sidebar{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+aside .button-sidebar:hover{
+    cursor: pointer;
+}
+
+main {
+    
+    background-color: #dbdbdb4d;
+    grid-area: main;
+    display: inline-flex;
+}
+.container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 240px;
+    max-height: 200px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.video-1, .video-2, .video-3, .video-4, .video-5, .video-6 {
+    flex: 1 0 20%; /* Ajuste este valor conforme necessário */
+    margin: 5px;
+}
+
+.picture-miniatura{
+    width: 100%;
+}
+
+.picture-canal{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.container-grid .description-video{
+    display: flex;
+    align-items: center;
+}
+
+.title-video{
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+.vizualizacoes{
+    font-size: 12px;
+    color: #515151;
+}
