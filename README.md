@@ -24,8 +24,8 @@ Certifique-se de ter os seguintes recursos disponíveis:
 
 ## Capturas de Tela
 
-[Print-01](/assets/imgs-readme/01.PNG)
-[Print-02](/assets/imgs-readme/02.PNG)
+![Print-01](/assets/imgs-readme/01.PNG)
+![Print-02](/assets/imgs-readme/02.PNG)
 
 ---
 Desenvolvido como parte do Desafio de Grid Layout da Digital Innovation One.
